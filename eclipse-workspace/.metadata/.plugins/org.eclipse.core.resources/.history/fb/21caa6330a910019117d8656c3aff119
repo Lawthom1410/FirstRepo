@@ -1,0 +1,10 @@
+package ExRes;
+
+public class ExamResults {
+	
+	public void displayRes (int physics, chemistry) {
+		System.out.println("Physics: " + physics);
+		System.out.println("Chemistry: " + chemistry);
+	}
+
+}

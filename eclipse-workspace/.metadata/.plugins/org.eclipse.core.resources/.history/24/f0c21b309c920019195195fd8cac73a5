@@ -1,0 +1,44 @@
+package pnt;
+
+public class PaintBrand {
+	
+	private String name;
+	private int size;
+	private double price;
+	private int coverage;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getSize() {
+		return size;
+	}
+	public void setSize(int size) {
+		this.size = size;
+	}
+	public float getPrice() {
+		return price;
+	}
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	public int getCoverage() {
+		return coverage;
+	}
+	public void setCoverage(int coverage) {
+		this.coverage = coverage;
+	}
+	
+	public PaintBrand(String name, int size, double price, int coverage) {
+		super();
+		this.name = name;
+		this.size = size;
+		this.price = price;
+		this.coverage = coverage;		
+	}
+	
+
+}

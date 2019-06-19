@@ -1,0 +1,18 @@
+package pers;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Person jack = new Person();
+		Person joe = new Person("Joe", 12, "Footballer");
+		Person leah = new Person("Leah", 23, "Banker");
+		
+		jack.getPersonInfo();
+		joe.getPersonInfo();
+		leah.getPersonInfo();
+		
+
+	}
+
+}

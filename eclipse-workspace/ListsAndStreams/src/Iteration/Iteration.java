@@ -1,0 +1,18 @@
+package Iteration;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Iteration {
+
+	public static void main(String[] args) {
+		
+		IterationLoops itrLoops = new IterationLoops();
+		itrLoops.IterationLoops();
+		
+		IterationStreams itrStreams = new IterationStreams();
+		itrStreams.IterationStreams();
+	}
+}

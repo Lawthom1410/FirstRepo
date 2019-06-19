@@ -1,0 +1,5 @@
+package gar;
+
+public abstract class Vehicle {
+
+}

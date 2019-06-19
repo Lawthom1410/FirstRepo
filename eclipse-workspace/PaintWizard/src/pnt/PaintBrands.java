@@ -1,0 +1,37 @@
+package pnt;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PaintBrands {
+	
+	private List<PaintBrand> brandsList = new ArrayList<>();
+	
+	public void addBrand (PaintBrand brand) {
+		this.brandsList.add(brand);		
+	}
+	
+	public void removeBrand (PaintBrand brand) {
+		this.brandsList.remove(brand);
+	}
+	
+	public void printAll() {
+		this.brandsList.stream().forEach(System.out::println);
+	}
+	
+	public PaintBrand cheapestBrand(double roomSize) {
+		double cheapestCost = Double.MAX_VALUE;
+		PaintBrand cheapestBrand = brandsList.get(0);
+		
+		for (PaintBrand i : brandsList) {
+			double myCost = i.getCost(roomSize);
+			
+			if (myCost < cheapestCost) {
+				cheapestCost = myCost;
+				cheapestBrand = i;
+			}			
+		}
+		return cheapestBrand;		
+	}
+
+}

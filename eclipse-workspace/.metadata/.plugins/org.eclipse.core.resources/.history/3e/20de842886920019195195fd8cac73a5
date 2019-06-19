@@ -1,0 +1,23 @@
+package gar;
+
+public class Unicycle extends Vehicle{
+	
+	private int noOfPedals;
+	private boolean seat;
+	
+	public int getNoOfPedals() {
+		return noOfPedals;
+	}
+	public void setNoOfPedals(int noOfPedals) {
+		this.noOfPedals = noOfPedals;
+	}
+	public boolean isSeat() {
+		return seat;
+	}
+	public void setSeat(boolean seat) {
+		this.seat = seat;
+	}
+	
+	
+
+}

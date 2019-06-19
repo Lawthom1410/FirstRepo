@@ -1,0 +1,9 @@
+package pers;
+
+public class Methods {
+	
+	public Person searchByName(String name) {
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+package calc;
+import java.util.Scanner;
+
+public class CalcApp {
+	
+	public static void main(String[] args) {
+		
+	    Scanner myObj = new Scanner(System.in);
+
+	    System.out.println("Enter first number:");	    
+	    String num1 = myObj.nextLine();
+	    int numint1 = Integer.parseInt(num1);
+	    
+	    System.out.println("Enter second number:");	    
+	    String num2 = myObj.nextLine();
+	    int numint2 = Integer.parseInt(num2);
+	    
+	    int opCheck = 0;
+	    while (opCheck == 0) {
+	    	System.out.println("Enter operator:");
+		    String op = myObj.nextLine();
+		    
+		    System.out.println(op);
+		    if (op.equals("+")) {
+		    	int total = numint1 + numint2;
+		    	opCheck = 1;
+		    }
+		    else {
+		    	System.out.println("Invalid operator. Try again.");
+		    	int total = 0
+		    }
+	    }      
+	   
+	    System.out.print("\n" + num1);  
+	    System.out.print("\n" + num2);
+	    System.out.println(total);
+		
+	}
+}

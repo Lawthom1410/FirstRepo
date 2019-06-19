@@ -1,0 +1,13 @@
+package ExRes;
+
+public class ExamResults {
+	
+	public void displayRes (int physics, int chemistry, int biology, int total) {
+		System.out.println("Physics: " + physics);
+		System.out.println("Chemistry: " + chemistry);
+		System.out.println("Biology: " + biology);
+		System.out.println();
+		System.out.println("Total: " + total);
+	}
+
+}

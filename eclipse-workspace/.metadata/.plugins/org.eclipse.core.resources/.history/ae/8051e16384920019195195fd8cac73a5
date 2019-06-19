@@ -1,0 +1,9 @@
+package gar;
+
+public abstract class Vehicle {
+	
+	private int noOfWheels;
+	private int damage;
+	private String regNumber;
+
+}

@@ -1,0 +1,25 @@
+package calc;
+import java.util.Scanner;
+
+public class CalcApp {
+	
+	public static void main(String[] args) {
+		
+	    Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter first number:");	    
+	    String num1 = myObj.nextLine();
+	    int result = Integer.parseInt(num1);
+	    
+	    System.out.println("Enter second number:");	    
+	    String num2 = myObj.nextLine();
+	    int result = Integer.parseInt(num2);
+	    
+	    System.out.print(num1 + "\n");
+	    System.out.print(num2);
+	    
+	    
+		
+	}
+
+
+}

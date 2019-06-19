@@ -1,0 +1,17 @@
+package gar;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Car bertie = new Car();
+		
+		Motorcycle rita = new Motorcycle();
+		
+		Unicycle simon = new Unicycle();
+		
+		System.out.println(bertie.getNoOfDoors());
+
+	}
+
+}

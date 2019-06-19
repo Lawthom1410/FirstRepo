@@ -1,0 +1,11 @@
+package tax;
+
+public class TaxesMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

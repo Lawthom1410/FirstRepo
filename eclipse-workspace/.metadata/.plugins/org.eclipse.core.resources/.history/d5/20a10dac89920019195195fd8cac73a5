@@ -1,0 +1,31 @@
+package gar;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	private List<Vehicle> vehicles = new ArrayList<>();
+	
+	public void addVehicle(Vehicle vehicle) {
+		this.vehicles.add(vehicle);
+	}
+	public void removeVehicle(Vehicle vehicle) {
+		this.vehicles.remove(vehicle);
+	}
+	
+	public void printVehicles() {
+		System.out.println(vehicles);
+	}
+	
+	public void fixVehicle(Vehicle vehicle) {
+		float bill = vehicle.getDamage() * 5.99;
+		if (vehicle instanceof Car) {
+			int missingDoors = ((Car) vehicle).getDefaultNoOfDoors() - ((Car)vehicle).getNoOfDoors();
+			bill += missingDoors * 9.99;
+		}
+		System.out.println(bill);
+		
+	}
+
+}

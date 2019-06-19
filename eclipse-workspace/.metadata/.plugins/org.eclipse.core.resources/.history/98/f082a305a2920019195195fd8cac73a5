@@ -1,0 +1,22 @@
+package pnt;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PaintBrands {
+	
+	private List<PaintBrand> brandsList = new ArrayList<>();
+	
+	public void addBrand (PaintBrand brand) {
+		this.brandsList.add(brand);		
+	}
+	
+	public void removeBrand (PaintBrand brand) {
+		this.brandsList.remove(brand);
+	}
+	
+	public void printAll() {
+		this.brandsList.stream().forEach(System.out::println);
+	}
+
+}

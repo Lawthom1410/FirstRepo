@@ -1,0 +1,19 @@
+package cond;
+
+import ExRes.ExamResults;
+
+public class ConditionalsApp {
+
+	public static void main(String[] args) {
+		
+		Conditionals cond = new Conditionals();
+		
+		int num1 = 2;
+		int num2 = 4;
+		boolean myBool = true;
+		
+		cond.method1(num1, num2, myBool);
+
+	}
+
+}

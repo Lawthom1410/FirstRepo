@@ -1,0 +1,8 @@
+package gar;
+
+public class Car extends Vehicle {
+	
+	private int noOfDoors;
+	private boolean roof;
+
+}

@@ -1,0 +1,30 @@
+package gar;
+
+public abstract class Vehicle {
+	
+	private int noOfWheels;
+	private int damage;
+	private String regNumber;
+	
+	public int getNoOfWheels() {
+		return noOfWheels;
+	}
+	public void setNoOfWheels(int noOfWheels) {
+		this.noOfWheels = noOfWheels;
+	}
+	public int getDamage() {
+		return damage;
+	}
+	public void setDamage(int damage) {
+		this.damage = damage;
+	}
+	public String getRegNumber() {
+		return regNumber;
+	}
+	public void setRegNumber(String regNumber) {
+		this.regNumber = regNumber;
+	}
+	
+	
+
+}

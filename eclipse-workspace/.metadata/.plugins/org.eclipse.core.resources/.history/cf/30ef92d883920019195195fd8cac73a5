@@ -1,0 +1,8 @@
+package gar;
+
+public class Motorcycle extends Vehicle {
+	
+	private int noOfHandlebars;
+	private boolean storage;
+
+}

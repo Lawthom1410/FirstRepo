@@ -1,0 +1,24 @@
+package pers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PersonList {
+	
+	private List<Person> personList = new ArrayList<>();
+	
+	public void addPerson(Person person) {
+		this.personList.add(person);
+	}
+	
+	public void printList() {
+		for (Person i : personList) {
+			System.out.println(i.getName());
+		}
+	}
+		
+	public List<Person> getList() {
+		return personList;
+	}
+
+}

@@ -1,0 +1,8 @@
+package gar;
+
+public class Unicycle extends Vehicle{
+	
+	private int noOfPedals;
+	private boolean seat; 
+
+}

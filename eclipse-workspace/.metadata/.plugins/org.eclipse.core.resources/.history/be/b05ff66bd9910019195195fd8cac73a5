@@ -1,0 +1,17 @@
+package rev;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+		String input = "esiotrot";
+		String output = "a";
+		char[] cs = input.toCharArray();
+		
+		for (int i = cs.length; i>= 0; i--) {
+			output += cs[i];
+		}
+		System.out.println(output);	
+	}
+
+}

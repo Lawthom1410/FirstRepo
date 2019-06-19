@@ -1,0 +1,14 @@
+package hello;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		String output = "Hello World";
+		printThis(output);
+	}
+
+	public void printThis(String myString) {
+		System.out.println(myString);
+	}
+}
+

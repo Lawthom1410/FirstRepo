@@ -1,0 +1,21 @@
+package gar;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Car bertie = new Car();
+		Car babara = new Car();
+		
+		Motorcycle rod = new Motorcycle();
+		Motorcycle rita = new Motorcycle();
+		
+		Unicycle simon = new Unicycle();
+		Unicycle sandra = new Unicycle();
+		
+		bertie.noOfDoors = 2;
+		
+
+	}
+
+}

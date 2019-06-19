@@ -1,0 +1,45 @@
+package ExRes;
+
+import java.text.DecimalFormat;
+
+public class ExamResults {
+	
+	public void displayRes (float physics, float chemistry, float biology, float total) {
+		DecimalFormat df = new DecimalFormat("#.##");
+		
+		System.out.println("Physics: " + df.format(physics));
+		System.out.println("Chemistry: " + df.format(chemistry));
+		System.out.println("Biology: " + df.format(biology));
+		System.out.println();
+		System.out.println("Total: " + df.format(total));
+		System.out.println();
+	}
+	
+	public void displayPerc (float percentage) {
+		DecimalFormat df = new DecimalFormat("#.##");
+		System.out.println("Total : " + df.format(percentage) + "%");
+	}
+	
+	public void failCheck (float[] resultList, float percentage) {
+		
+		float physics = resultList[0];
+		float chemistry = resultList[1];
+		float biology = resultList[2];
+		
+		for (int i : resultList) {
+			System.out.println(i);
+		}
+		
+		
+		if (percentage < 60) {
+			System.out.println("Failed: Overall less than 60%");
+		}
+		else if (physics < 60 || chemistry < 60 || biology < 60) {
+			System.out.println("Failed: Individual test less than 60%");
+		}
+		else {
+			System.out.println("Passed");
+		}
+	}
+
+}

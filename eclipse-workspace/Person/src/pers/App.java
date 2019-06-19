@@ -1,0 +1,38 @@
+package pers;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		Person jack = new Person();
+		Person joe = new Person("Joe", 12, "Footballer");
+		Person leah = new Person("Leah", 23, "Banker");
+		Person jori = new Person("Jori", -1, "Baby");
+		Person grandma = new Person("Grandma", 1150, "Great Grandmother");
+		
+//		jack.getPersonInfo();
+//		joe.getPersonInfo();
+//		leah.getPersonInfo();
+//		jori.getPersonInfo();
+//		grandma.getPersonInfo();
+		
+		PersonList family = new PersonList();
+		family.addPerson(jack);
+		family.addPerson(joe);
+		family.addPerson(leah);	
+		
+//		family.printList();
+		List<Person> familyList = family.getList();
+		
+//		Stream, output all people:
+//		familyList.stream().forEach(i -> i.getPersonInfo());	
+
+		Person findJack = family.searchByName("Jack");
+		findJack.getPersonInfo();
+	}
+
+}

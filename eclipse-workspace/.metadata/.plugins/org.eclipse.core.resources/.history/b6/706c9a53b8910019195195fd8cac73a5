@@ -1,0 +1,30 @@
+package blkjck;
+
+public class BlackJack {
+
+	public void main(String[] args) {
+		
+		BlackJack.play(10,21);
+		play(20,18);
+		play(1,22);
+		play(22,23);
+		
+	}
+	
+	public int play (int num1, int num2) {
+		int diff1 = 21 - num1;
+		int diff2 = 21 - num2;
+		
+		if (diff1 < 0 && diff2 < 0) {
+			return 0;
+		}
+		else if (diff1 < diff2) {
+			return num1;
+		}
+		else if (diff2 < diff1) {
+			return num2;
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package blkjck;
+
+public class BlackJack {
+
+	public static void main(String[] args) {
+		
+		BlackJackM BJM = new BlackJackM();
+		
+		BJM.play(10,21);
+		
+	}
+	
+	
+
+}

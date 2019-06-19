@@ -1,0 +1,18 @@
+package blkjck;
+
+public class BlackJack {
+
+	public static void main(String[] args) {
+		
+		BlackJackM BJK = new BlackJackM();
+		
+		int result = BJK.play(10,21);
+		System.out.println(result);
+		result = BJK.play(20,18);
+		System.out.println(result);
+		result = BJK.play(1,22);
+		System.out.println(result);
+		result = BJK.play(22,23);
+		System.out.println(result);		
+	}	
+}

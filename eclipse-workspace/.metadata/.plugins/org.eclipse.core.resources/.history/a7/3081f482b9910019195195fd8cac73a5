@@ -1,0 +1,24 @@
+package blkjck;
+
+public class BlackJackM {
+	
+	public int play (int num1, int num2) {
+		int diff1 = 21 - num1;
+		int diff2 = 21 - num2;
+		int result = 100;
+		System.out.println(diff2);
+		
+		if (diff1 < 0 && diff2 < 0) {
+			result = 0;
+		}
+		else if (diff1 < diff2 || diff1 >= 0) {
+			result = num1;
+		}
+		else if (diff2 < diff1 || diff2 >= 0) {
+			result = num2;
+		}
+		
+		return result;		
+	}
+
+}

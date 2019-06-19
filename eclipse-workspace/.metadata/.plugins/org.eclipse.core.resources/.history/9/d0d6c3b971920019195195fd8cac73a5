@@ -1,0 +1,17 @@
+package pers;
+
+public class Person {
+	
+	private String name = "Jack" ;
+	private int age = 24;
+	private String jobTitle = "Astronaut";
+
+	public void personInfo(String name, int age, String jobTitle) {
+		System.out.println(String.format("The person's name is %s.", name));
+		System.out.println(String.format("Their age is %f.", age));
+		System.out.println(String.format("Their occupation is %s.", jobTitle));
+		
+		
+	}
+	
+}

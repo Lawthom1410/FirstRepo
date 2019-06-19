@@ -1,0 +1,25 @@
+package ExRes;
+
+public class ExamResultsApp {
+
+	public static void main(String[] args) {
+		
+		float physics = 150;	
+		float chemistry = 70;
+		float biology = 59;
+		float total = physics + chemistry + biology;
+		float percentage = (total/450)*100;
+		
+		float physicsPerc = (physics/150)*100;
+		float chemistryPerc = (chemistry/150)*100;
+		float biologyPerc = (biology/150)*100;
+				
+		ExamResults res = new ExamResults();
+		res.displayRes(physics, chemistry, biology, total);
+		res.displayPerc(percentage);
+		
+		float[] resultList = {physicsPerc, chemistryPerc, biologyPerc};
+		res.failCheck(resultList, percentage);
+	}
+
+}

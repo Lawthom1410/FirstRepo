@@ -1,0 +1,10 @@
+package ExRes;
+
+public class ExamResultsApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

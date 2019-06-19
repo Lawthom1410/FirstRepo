@@ -1,0 +1,35 @@
+package pers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PersonList {
+	
+	private List<Person> personList = new ArrayList<>();
+	
+	public void addPerson(Person person) {
+		this.personList.add(person);
+	}
+	
+	public void printList() {
+		for (Person i : personList) {
+			System.out.println(i.getName());
+		}
+	}
+		
+	public List<Person> getList() {
+		return this.personList;
+	}
+	
+	public Person searchByName(String name) {
+		Person invalid = new Person("",0,"");
+		for (Person i : personList) {
+			if (i.getName() == name) {
+				return i;
+			}
+		}
+		System.out.println("No result found.");
+		return invalid;
+	}
+
+}

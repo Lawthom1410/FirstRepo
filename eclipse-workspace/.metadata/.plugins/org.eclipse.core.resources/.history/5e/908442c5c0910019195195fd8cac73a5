@@ -1,0 +1,12 @@
+package tax;
+
+public class Taxes {
+	
+	public static void main(String[] args) {
+		Tax tx = new Tax();
+		
+		float salary = 15;
+		
+		float taxPerc = tx.method1();
+	}
+}

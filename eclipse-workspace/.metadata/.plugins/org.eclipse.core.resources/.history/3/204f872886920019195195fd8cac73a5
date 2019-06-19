@@ -1,0 +1,23 @@
+package gar;
+
+public class Car extends Vehicle {
+	
+	private int noOfDoors;
+	private boolean roof;
+	
+	public int getNoOfDoors() {
+		return noOfDoors;
+	}
+	public void setNoOfDoors(int noOfDoors) {
+		this.noOfDoors = noOfDoors;
+	}
+	public boolean isRoof() {
+		return roof;
+	}
+	public void setRoof(boolean roof) {
+		this.roof = roof;
+	}
+	
+	
+
+}

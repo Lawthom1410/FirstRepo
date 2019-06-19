@@ -1,0 +1,23 @@
+package gar;
+
+public class Motorcycle extends Vehicle {
+	
+	private int noOfHandlebars;
+	private int defaultNoOfHandlebars;
+	
+	public int getNoOfHandlebars() {
+		return noOfHandlebars;
+	}
+	public void setNoOfHandlebars(int noOfHandlebars) {
+		this.noOfHandlebars = noOfHandlebars;
+	}
+	public int getDefaultNoOfHandlebars() {
+		return defaultNoOfHandlebars;
+	}
+	public void setDefaultNoOfHandlebars(int defaultNoOfHandlebars) {
+		this.defaultNoOfHandlebars = defaultNoOfHandlebars;
+	}
+
+	
+
+}
