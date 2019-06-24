@@ -28,14 +28,14 @@ function calculate(calculation) {
     //History
     const histElem = document.getElementById("history");
     const newSpan = document.createElement('span');
-    newSpan.style.cssText = "color: red; border: 10px solid white; font-size:100px";
-    newSpan.innerText = result + ",";
+    newSpan.style.cssText = "border: 5px solid white";
+    newSpan.innerText = result;
     histElem.prepend(newSpan);
 }
 
 function clearThings() {
     document.getElementById("history").innerText = "";
-    document.getElementById("result").innerText = "";
+    document.getElementById("result").innerText = "Congratulations, you comleted calculator.";
     document.getElementById("num1").value = "";
     document.getElementById("num2").value = "";
 }

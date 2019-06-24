@@ -1,0 +1,19 @@
+
+body {
+    background-color: rgba(0, 128, 0, 0.534);
+}
+
+p {
+    font-family: sans-serif;
+}
+
+#result {
+    font-size: 200px;    
+    color: rgb(160, 12, 12);
+    border: 10px solid white;
+}
+
+#history {
+    font-size: 100px;
+    color: rgb(6, 83, 16);
+}
