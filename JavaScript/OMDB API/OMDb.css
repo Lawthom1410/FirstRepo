@@ -15,3 +15,8 @@ body {
 #details {
     border: 5px;
 }
+
+.listDiv {
+    margin: auto;
+    max-width: 350px;
+}
