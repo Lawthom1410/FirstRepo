@@ -1,0 +1,17 @@
+body {
+    background-image: url("background.jpg");
+    margin-left: 10px;
+}
+
+#returnButton {
+    margin-top: 20px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 80px;
+}
+
+#details {
+    border: 5px;
+}
