@@ -5,9 +5,9 @@
     </head>
     <body>
         <h1>Login</h1>
-        <form onsubmit="return handleLogin(this)">
-            <input id="username" type="text" placeholder="Username">
-            <input id="password" type="password" placeholder="Password">
+        <form class="form-signin" onsubmit="return handleLogin(this)" required autofocus>
+            <input class="form-control" id="username" type="text" placeholder="Username">
+            <input class="form-control" id="password" type="password" placeholder="Password">
 
             <button class="btn btn-outline-dark ntn-lg" id="loginButton">Log in</button>
             <button class="btn btn-outline-dark ntn-lg" id="registerButton" onclick="registerPage()">Register</button>
