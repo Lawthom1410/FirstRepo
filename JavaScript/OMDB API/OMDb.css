@@ -18,5 +18,10 @@ body {
 
 .listDiv {
     margin: auto;
+    margin-top: 30px;
     max-width: 350px;
+}
+
+.starter-template, .listDiv {
+    text-align: center;
 }

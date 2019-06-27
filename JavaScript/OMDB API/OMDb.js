@@ -1,6 +1,7 @@
 function createPage(data) {
 
     const searchBar = document.getElementById('searchBar');
+    const starterTemp = document.getElementById('starter-temp');
     
     const searchInput = document.createElement("input");
     searchInput.setAttribute('id', 'searchBar');
@@ -12,7 +13,13 @@ function createPage(data) {
     searchButton.setAttribute('id', 'search');
     searchButton.setAttribute('class', 'btn btn-outline-light my-2 my-sm-0');
     searchBar.append(searchButton);
-    searchButton.innerText = 'Search';
+    searchButton.innerText = 'Search';    
+
+    const greetingP = document.createElement("p");
+    greetingP.setAttribute('class', 'lead');
+    greetingP.setAttribute('id','greetingP');
+    starterTemp.append(greetingP);
+    greetingP.innerHTML = 'This website will search your favourite movies.<br> This paragraph will dissapear when a movie is searched.';
 
 }
 
@@ -37,6 +44,9 @@ function handleSearch(searchInput){
 
 function outputList({Search}) {
     const filmList = document.getElementById("filmList");
+    const greetingP= document.getElementById("greetingP");
+
+    greetingP.innerText = '';
 
     // console.log(Search[0].Title + " (" + Search[0].Year +")");
     

@@ -12,15 +12,21 @@
             
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="file:///C:/Users/Admin/Desktop/FirstRepo/JavaScript/OMDB%20API/OMDb.html">Home <span class="sr-only">(current)</span></a>
-                    </li>                                  
+                        <li class="nav-item active">
+                            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/FirstRepo/JavaScript/OMDB%20API/OMDb.html">Home <span class="sr-only">(current)</span></a>
+                        </li>                                  
                     </ul>
                     <form class='form-inline my-2 my-lg-0' id="searchBar" onsubmit="return handleSearch(this)"></form>                    
                 </div>
-            </nav>
+        </nav>
         
-        <div class="container" id="filmList"></div>
+        <main role="main" class="container">
+            <div id="starter-temp" class="starter-template">
+                <h1><b>|Movie |</b> Mov.Search <b>| Search|</b> </h1>
+            </div> 
+            
+            <div id="filmList"></div>
+        </main>
 
 
         <script src="OMDb.js"></script>
